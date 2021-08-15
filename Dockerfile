@@ -10,8 +10,8 @@ ENV DEBIAN_FRONTEND noninteractive
 ENV UNIFI_VERSION 6.2.26-a79cb15f05
 
     # INSTALL PACKAGES
-RUN echo "deb http://ftp.us.debian.org/debian stretch main" \
-    | tee -a /etc/apt/sources.list.d/stretch.list && \
+RUN echo "deb http://ftp.us.debian.org/debian buster main" \
+    | tee -a /etc/apt/sources.list.d/buster.list && \
     apt-get update -q && \
     apt-get upgrade -y && \
     apt-get dist-upgrade -y && \
